@@ -47,10 +47,10 @@ end
 
 function CustomRange.OnGameEnd()
 	CustomRange.CurrentParticle = 0
-	CustomRange.TickUpdate = 0
+	--CustomRange.TickUpdate = 0
 	
 	MyHero = nil
-	MyPos = nil
+	--MyPos = nil
 	
 	CustomRange.NeedInit = true
 	
@@ -65,12 +65,12 @@ function CustomRange.OnDraw()
 	
 	if CustomRange.NeedInit == true then	
 		CustomRange.CurrentParticle = 0
-		CustomRange.TickUpdate = 0
+		--CustomRange.TickUpdate = 0
 		
 		if MyHero == nil then
 			MyHero = Heroes.GetLocal()
 		end
-		MyPos = nil
+		--MyPos = nil
 		
 		CustomRange.NeedInit = false
 	end
